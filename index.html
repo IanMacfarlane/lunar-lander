@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>Lunar Lander</title>
+		<link rel='stylesheet' href='style.css'>
+	</head>
+	<body>
+		<div class='window'>
+			<div class='game' id='game'>
+				<div class='menu'>
+					<input type='button' value='New Game' onClick='onNewGameClick()'>
+					<input type='button' value='High Scores' onClick='onHighScoresClick()'>
+					<input type='button' value='Controls' onClick='onControlsClick()'>
+					<input type='button' value='Credits' onClick='onCreditsClick()'>
+				</div>
+				<div id='container'>
+					<canvas id='myCanvas' width='500' height='500'>
+						<img id='background' src='background.jpeg'>
+						<img id='lander' src='lander.png'>
+					</canvas>
+				</div>
+				<div id='subMenu'>
+				</div>
+			</div>
+		</div>
+		<script src='lunarlander.js'></script>
+	</body>
+</html>
